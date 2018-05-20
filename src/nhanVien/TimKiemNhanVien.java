@@ -201,7 +201,7 @@ public class TimKiemNhanVien {
 				xuatfile();
 			}
 		});
-		btnNewButton.setIcon(new ImageIcon(iconFolderPath + "xuatFile.png"));
+		btnNewButton.setIcon(new ImageIcon(iconFolderPath + "inPhieu.png"));
 		frmTimKiemNhan.getContentPane().add(btnNewButton);
 	}
 	
@@ -643,7 +643,9 @@ public class TimKiemNhanVien {
 			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(a));
 			document.open();
 			Paragraph pa1= new Paragraph("  TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI         Đề tài: Chương trình quản lý cho thuê xe",f_B) ;
-			Paragraph pa2= new Paragraph("                                 ĐỒ ÁN I                                                    Nhóm 2",f_B) ;
+			Paragraph pa2= new Paragraph("                                 ĐỒ ÁN I                                                    Nhóm 2: Bùi Hữu Quyết",f_B) ;
+			Paragraph pa22= new Paragraph("                                                                                                                  Đoàn Văn Phú",f_B) ;
+			Paragraph pa222= new Paragraph("                                                                                                                  Lý Bảo Long",f_B) ;
 			Paragraph pa3= new Paragraph("		 				                                                                                 	----------------------------------",f) ;
 			Paragraph pa4= new Paragraph(" ",f) ;
 			Calendar cal = Calendar.getInstance();
@@ -742,6 +744,9 @@ public class TimKiemNhanVien {
 			//ADD TEXT
 			document.add(pa1);		
 			document.add(pa2);
+
+			document.add(pa22);
+			document.add(pa222);
 			document.add(pa3);
 			document.add(pa4);
 			document.add(pa5);	

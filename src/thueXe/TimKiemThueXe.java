@@ -203,7 +203,7 @@ public class TimKiemThueXe {
 				xuatfile();
 			}
 		});
-		btnXutFile.setIcon(new ImageIcon(iconFolderPath + "xuatFile.png"));
+		btnXutFile.setIcon(new ImageIcon(iconFolderPath + "inPhieu.png"));
 		btnXutFile.setFont(new Font("Avenir Next", Font.BOLD, 26));
 		btnXutFile.setBounds(262, 231, 240, 70);
 		frmTimKiemThue.getContentPane().add(btnXutFile);
@@ -221,7 +221,7 @@ public class TimKiemThueXe {
 				}
 			}
 		});
-		btnInPhiu.setIcon(new ImageIcon(iconFolderPath + "inPhieu.png"));
+		btnInPhiu.setIcon(new ImageIcon("C:\\Users\\PC\\Desktop\\Eclise\\QLTX\\iconImages\\inPhieu.png"));
 		btnInPhiu.setFont(new Font("Dialog", Font.BOLD, 26));
 		btnInPhiu.setBounds(526, 231, 240, 70);
 		frmTimKiemThue.getContentPane().add(btnInPhiu);

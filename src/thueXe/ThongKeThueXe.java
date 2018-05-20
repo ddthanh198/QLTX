@@ -147,7 +147,7 @@ public class ThongKeThueXe {
 				xuatfile();
 			}
 		});
-		btnXutFile.setIcon(new ImageIcon(iconFolderPath + "xuatFile.png"));
+		btnXutFile.setIcon(new ImageIcon(iconFolderPath + "inPhieu.png"));
 		btnXutFile.setFont(new Font("Avenir Next", Font.BOLD, 20));
 		btnXutFile.setBounds(297, 212, 200, 70);
 		frmThongKeThue.getContentPane().add(btnXutFile);
@@ -212,7 +212,8 @@ public class ThongKeThueXe {
 	
 	public static void countQuy() {
 		DefaultTableModel model = new DefaultTableModel();
-		String sqlCommand = "select quarter(NgayThue ) as 'Quý', year(NgayThue) as 'Năm', count(MaKhachHang) as `Số khách thuê`, sum(TienCoc) as `Tổng tiền cọc`, sum(TongTienPhat) as`Tổng tiền phạt` from thuexe group by quarter(NgayThue ), year(NgayThue)";
+		String sqlCommand = "select quarter(NgayThue ) as Quý, year(NgayThue) as Năm, count(MaKhachHang) as `Số khách thuê`, sum(TienCoc) as `Tổng tiền cọc`, sum(TongTienPhat) as`Tổng tiền phạt` from thuexe group by quarter(NgayThue ), year(NgayThue)\n" + 
+				""  ;
 		ResultSet rs = null;
 		
 		Statement st;
@@ -254,7 +255,7 @@ public class ThongKeThueXe {
 	
 	public static void countThang() {
 		DefaultTableModel model = new DefaultTableModel();
-		String sqlCommand = "select month(NgayThue ) as 'Tháng', year(NgayThue) as 'Năm', count(MaKhachHang) as `Số khách thuê`, sum(TienCoc) as `Tổng tiền cọc`, sum(TongTienPhat) as`Tổng tiền phạt` from thuexe group by month(NgayThue ), year(NgayThue)\n" + 
+		String sqlCommand = "select month(NgayThue ) as Tháng, year(NgayThue) as Năm, count(MaKhachHang) as `Số khách thuê`, sum(TienCoc) as `Tổng tiền cọc`, sum(TongTienPhat) as`Tổng tiền phạt` from thuexe group by month(NgayThue ), year(NgayThue)\n" + 
 				""  ;
 		ResultSet rs = null;
 		
@@ -297,7 +298,7 @@ public class ThongKeThueXe {
 	
 	public static void countNam() {
 		DefaultTableModel model = new DefaultTableModel();
-		String sqlCommand = "select year(NgayThue) as 'Năm', count(MaKhachHang) as `Số khách thuê`, sum(TienCoc) as `Tổng tiền cọc`, sum(TongTienPhat) as`Tổng tiền phạt` from thuexe group by year(NgayThue)"  ;
+		String sqlCommand = "select year(NgayThue) as Năm, count(MaKhachHang) as `Số khách thuê`, sum(TienCoc) as `Tổng tiền cọc`, sum(TongTienPhat) as`Tổng tiền phạt` from thuexe group by year(NgayThue)"  ;
 		ResultSet rs = null;
 		
 		Statement st;

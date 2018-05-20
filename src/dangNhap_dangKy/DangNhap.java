@@ -91,7 +91,7 @@ public class DangNhap {
 		JLabel lblMatKhau = new JLabel("Mat khau");
 		lblMatKhau.setFont(new Font("Avenir Next", Font.BOLD, 28));
 		lblMatKhau.setHorizontalAlignment(SwingConstants.CENTER);
-		lblMatKhau.setBounds(308, 254, 150, 40);
+		lblMatKhau.setBounds(308, 238, 150, 40);
 		frame.getContentPane().add(lblMatKhau);
 	}
 	
@@ -106,7 +106,7 @@ public class DangNhap {
 		matKhau_pf = new JPasswordField();
 		matKhau_pf.setFont(new Font("Avenir Next", Font.PLAIN, 28));
 		matKhau_pf.setHorizontalAlignment(SwingConstants.CENTER);
-		matKhau_pf.setBounds(458, 254, 250, 40);
+		matKhau_pf.setBounds(458, 238, 250, 40);
 		frame.getContentPane().add(matKhau_pf);
 	}
 	
@@ -121,7 +121,7 @@ public class DangNhap {
 				dangNhapBtnPressed();
 			}
 		});
-		btnDangNhap.setBounds(308, 328, 180, 110);
+		btnDangNhap.setBounds(308, 344, 180, 94);
 		frame.getContentPane().add(btnDangNhap);
 		
 		JButton btnHuy = new JButton("Huy", huyIcon);
@@ -132,7 +132,7 @@ public class DangNhap {
 				huyBtnPressed();
 			}
 		});
-		btnHuy.setBounds(528, 328, 180, 110);
+		btnHuy.setBounds(528, 344, 180, 94);
 		frame.getContentPane().add(btnHuy);
 		
 		JLabel lblPhanMemQuan = new JLabel("PHAN MEM QUAN LY THUE XE");
@@ -164,6 +164,19 @@ public class DangNhap {
 		lblNhom.setFont(new Font("Avenir Next", Font.BOLD, 32));
 		lblNhom.setBounds(308, 111, 397, 40);
 		frame.getContentPane().add(lblNhom);
+		
+		JLabel lblQuenMatKhau = new JLabel("Quen mat khau...");
+		lblQuenMatKhau.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				QuenMatKhau window = new QuenMatKhau();
+				window.setVisible(true);
+				frame.dispose();
+			}
+		});
+		lblQuenMatKhau.setFont(new Font("Avenir Next", Font.PLAIN, 20));
+		lblQuenMatKhau.setBounds(316, 292, 160, 40);
+		frame.getContentPane().add(lblQuenMatKhau);
 		
 	}
 	

@@ -62,6 +62,8 @@ public class GiaoDienChinh {
 	ImageIcon nhanVienIcon = new ImageIcon(iconFolderPath + "nhanVien.png");
 	ImageIcon thueXeIcon = new ImageIcon(iconFolderPath + "thueXe.png");
 	ImageIcon taiKhoanIcon = new ImageIcon(iconFolderPath + "taiKhoan.png");
+	ImageIcon dangKyIcon = new ImageIcon(iconFolderPath + "dangKy.png");
+	ImageIcon dangXuatIcon = new ImageIcon(iconFolderPath + "dangXuat.png");
 	
 	/**
 	 * Create the application.
@@ -599,74 +601,67 @@ public class GiaoDienChinh {
 		
 		TaiKhoan_Panel = new JTabbedPane(JTabbedPane.TOP);
 		TaiKhoan_Panel.setFont(new Font("Time new roman ", Font.BOLD, 20));
-		TaiKhoan_Panel.setBounds(0, 0, 1279, 584);
+		TaiKhoan_Panel.setBounds(0, 0, 1263, 610);
 		taiKhoanPnl.add(TaiKhoan_Panel);
 		
 		ThongTin_Panel = new JPanel();
-		TaiKhoan_Panel.addTab("Thong Tin tai Khoan", null, ThongTin_Panel, null);
+		TaiKhoan_Panel.addTab("Thong Tin Tai Khoan", null, ThongTin_Panel, null);
 		ThongTin_Panel.setLayout(null);
-		
-		JLabel lblThongTinTai = new JLabel("Thong Tin Tai Khoan");
-		lblThongTinTai.setHorizontalAlignment(SwingConstants.CENTER);
-		lblThongTinTai.setForeground(Color.BLACK);
-		lblThongTinTai.setFont(new Font("Times New Roman", Font.PLAIN, 36));
-		lblThongTinTai.setBounds(428, 41, 389, 55);
-		ThongTin_Panel.add(lblThongTinTai);
 		
 		JLabel lblHoTen = new JLabel("Ho ten");
 		lblHoTen.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHoTen.setForeground(Color.BLACK);
-		lblHoTen.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblHoTen.setBounds(460, 170, 92, 24);
+		lblHoTen.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblHoTen.setBounds(376, 125, 200, 40);
 		ThongTin_Panel.add(lblHoTen);
 		
 		JLabel lblNamSinh = new JLabel("Nam sinh");
 		lblNamSinh.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNamSinh.setForeground(Color.BLACK);
-		lblNamSinh.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNamSinh.setBounds(474, 233, 76, 24);
+		lblNamSinh.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblNamSinh.setBounds(376, 188, 200, 40);
 		ThongTin_Panel.add(lblNamSinh);
 		
 		JLabel lblSoDienThoai = new JLabel("So dien thoai");
 		lblSoDienThoai.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSoDienThoai.setForeground(Color.BLACK);
-		lblSoDienThoai.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblSoDienThoai.setBounds(462, 301, 102, 24);
+		lblSoDienThoai.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblSoDienThoai.setBounds(378, 256, 200, 40);
 		ThongTin_Panel.add(lblSoDienThoai);
 		
-		JLabel lblQuynHn = new JLabel("Quyen Han");
+		JLabel lblQuynHn = new JLabel("Quyen han");
 		lblQuynHn.setHorizontalAlignment(SwingConstants.CENTER);
 		lblQuynHn.setForeground(Color.BLACK);
-		lblQuynHn.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblQuynHn.setBounds(474, 367, 92, 21);
+		lblQuynHn.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblQuynHn.setBounds(376, 320, 200, 40);
 		ThongTin_Panel.add(lblQuynHn);
 		
 		HoTen_TT = new JTextField();
-		HoTen_TT.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		HoTen_TT.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		HoTen_TT.setColumns(10);
-		HoTen_TT.setBounds(605, 170, 188, 24);
+		HoTen_TT.setBounds(576, 125, 326, 40);
 		ThongTin_Panel.add(HoTen_TT);
 		HoTen_TT.setEditable(false);
 		
 		NamSinh_TT = new JTextField();
-		NamSinh_TT.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		NamSinh_TT.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		NamSinh_TT.setColumns(10);
-		NamSinh_TT.setBounds(605, 237, 188, 24);
+		NamSinh_TT.setBounds(576, 188, 326, 40);
 		ThongTin_Panel.add(NamSinh_TT);
 		NamSinh_TT.setEditable(false);
 		
 		SoDienThoai_TT = new JTextField();
-		SoDienThoai_TT.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		SoDienThoai_TT.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		SoDienThoai_TT.setColumns(10);
-		SoDienThoai_TT.setBounds(605, 301, 188, 24);
+		SoDienThoai_TT.setBounds(576, 256, 326, 40);
 		ThongTin_Panel.add(SoDienThoai_TT);
 		SoDienThoai_TT.setEditable(false);
 		
 		QuyenHan_TT = new JTextField();
 		QuyenHan_TT.setForeground(new Color(0, 0, 0));
-		QuyenHan_TT.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		QuyenHan_TT.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		QuyenHan_TT.setColumns(10);
-		QuyenHan_TT.setBounds(605, 365, 188, 24);
+		QuyenHan_TT.setBounds(576, 320, 326, 40);
 		ThongTin_Panel.add(QuyenHan_TT);
 		QuyenHan_TT.setEditable(false);
 		
@@ -674,98 +669,91 @@ public class GiaoDienChinh {
 		TaiKhoan_Panel.addTab("Dang ki", null, DangKi_Panel, null);
 		DangKi_Panel.setLayout(null);
 		
-		JLabel label_3 = new JLabel("Dang ki");
-		label_3.setHorizontalAlignment(SwingConstants.CENTER);
-		label_3.setForeground(Color.BLACK);
-		label_3.setFont(new Font("Times New Roman", Font.PLAIN, 36));
-		label_3.setBounds(543, 83, 144, 55);
-		DangKi_Panel.add(label_3);
-		
 		JLabel lblTenDangNhap = new JLabel("Ten dang nhap");
 		lblTenDangNhap.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTenDangNhap.setForeground(Color.BLACK);
-		lblTenDangNhap.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblTenDangNhap.setBounds(300, 193, 108, 24);
+		lblTenDangNhap.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblTenDangNhap.setBounds(91, 91, 200, 40);
 		DangKi_Panel.add(lblTenDangNhap);
 		
 		TenDangNhap_DK = new JTextField();
 		TenDangNhap_DK.setHorizontalAlignment(SwingConstants.CENTER);
-		TenDangNhap_DK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		TenDangNhap_DK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		TenDangNhap_DK.setColumns(10);
-		TenDangNhap_DK.setBounds(418, 189, 192, 28);
+		TenDangNhap_DK.setBounds(291, 91, 326, 40);
 		DangKi_Panel.add(TenDangNhap_DK);
 		
 		JLabel lblMatKhau = new JLabel("Mat khau");
 		lblMatKhau.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMatKhau.setForeground(Color.BLACK);
-		lblMatKhau.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblMatKhau.setBounds(706, 193, 86, 24);
+		lblMatKhau.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblMatKhau.setBounds(617, 91, 200, 40);
 		DangKi_Panel.add(lblMatKhau);
 		
 		JLabel lblHoTen_1 = new JLabel("Ho ten");
 		lblHoTen_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblHoTen_1.setForeground(Color.BLACK);
-		lblHoTen_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblHoTen_1.setBounds(300, 285, 92, 24);
+		lblHoTen_1.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblHoTen_1.setBounds(91, 183, 200, 40);
 		DangKi_Panel.add(lblHoTen_1);
 		
 		JLabel lblNamSinh_1 = new JLabel("Nam sinh");
 		lblNamSinh_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNamSinh_1.setForeground(Color.BLACK);
-		lblNamSinh_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNamSinh_1.setBounds(716, 285, 76, 24);
+		lblNamSinh_1.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblNamSinh_1.setBounds(617, 183, 200, 40);
 		DangKi_Panel.add(lblNamSinh_1);
 		
 		JLabel lblSoDienThoai_1 = new JLabel("So dien thoai");
 		lblSoDienThoai_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSoDienThoai_1.setForeground(Color.BLACK);
-		lblSoDienThoai_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblSoDienThoai_1.setBounds(300, 374, 108, 24);
+		lblSoDienThoai_1.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblSoDienThoai_1.setBounds(91, 272, 200, 40);
 		DangKi_Panel.add(lblSoDienThoai_1);
 		
 		JLabel lblCap = new JLabel("Cap");
 		lblCap.setHorizontalAlignment(SwingConstants.CENTER);
 		lblCap.setForeground(Color.BLACK);
-		lblCap.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblCap.setBounds(716, 376, 76, 21);
+		lblCap.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblCap.setBounds(617, 272, 200, 40);
 		DangKi_Panel.add(lblCap);
 		
 		HoTen_DK = new JTextField();
 		HoTen_DK.setHorizontalAlignment(SwingConstants.CENTER);
-		HoTen_DK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		HoTen_DK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		HoTen_DK.setColumns(10);
-		HoTen_DK.setBounds(418, 281, 192, 28);
+		HoTen_DK.setBounds(291, 183, 326, 40);
 		DangKi_Panel.add(HoTen_DK);
 		
 		SoDienThoai_DK = new JTextField();
 		SoDienThoai_DK.setHorizontalAlignment(SwingConstants.CENTER);
-		SoDienThoai_DK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		SoDienThoai_DK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		SoDienThoai_DK.setColumns(10);
-		SoDienThoai_DK.setBounds(418, 370, 192, 28);
+		SoDienThoai_DK.setBounds(291, 272, 326, 40);
 		DangKi_Panel.add(SoDienThoai_DK);
 		
 		MatKhau_DK = new JTextField();
 		MatKhau_DK.setHorizontalAlignment(SwingConstants.CENTER);
-		MatKhau_DK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		MatKhau_DK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		MatKhau_DK.setColumns(10);
-		MatKhau_DK.setBounds(802, 191, 192, 28);
+		MatKhau_DK.setBounds(817, 91, 326, 40);
 		DangKi_Panel.add(MatKhau_DK);
 		
 		NamSinh_DK = new JTextField();
 		NamSinh_DK.setHorizontalAlignment(SwingConstants.CENTER);
-		NamSinh_DK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		NamSinh_DK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		NamSinh_DK.setColumns(10);
-		NamSinh_DK.setBounds(802, 281, 192, 28);
+		NamSinh_DK.setBounds(817, 183, 326, 40);
 		DangKi_Panel.add(NamSinh_DK);
 		
 		Cap_DK = new JTextField();
 		Cap_DK.setHorizontalAlignment(SwingConstants.CENTER);
-		Cap_DK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		Cap_DK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		Cap_DK.setColumns(10);
-		Cap_DK.setBounds(802, 370, 192, 28);
+		Cap_DK.setBounds(817, 272, 326, 40);
 		DangKi_Panel.add(Cap_DK);
 		
-		JButton btnDangKi = new JButton("Dang Ki");
+		JButton btnDangKi = new JButton("DANG KY", dangKyIcon);
 		btnDangKi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(TenDangNhap_DK.getText().equals("")||MatKhau_DK.getText().equals("")||HoTen_DK.getText().equals("")||NamSinh_DK.getText().equals("")||SoDienThoai_DK.getText().equals("")||Cap_DK.getText().equals(""))
@@ -785,93 +773,87 @@ public class GiaoDienChinh {
 				}
 			}
 		});
-		btnDangKi.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnDangKi.setBounds(456, 439, 114, 37);
+		btnDangKi.setFont(new Font("Avenir Next", Font.BOLD, 26));
+		btnDangKi.setBounds(508, 392, 220, 110);
 		DangKi_Panel.add(btnDangKi);
 		
-		JButton btnXoa = new JButton("Xoa");
-		btnXoa.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				TenDangNhap_DK.setText("");
-				MatKhau_DK.setText("");
-				HoTen_DK.setText("");
-				NamSinh_DK.setText("");
-				SoDienThoai_DK.setText("");
-				Cap_DK.setText("");
-			}
-		});
-		btnXoa.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnXoa.setBounds(848, 439, 114, 37);
-		DangKi_Panel.add(btnXoa);
+//		JButton btnXoa = new JButton("Xoa");
+//		btnXoa.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent arg0) {
+//				TenDangNhap_DK.setText("");
+//				MatKhau_DK.setText("");
+//				HoTen_DK.setText("");
+//				NamSinh_DK.setText("");
+//				SoDienThoai_DK.setText("");
+//				Cap_DK.setText("");
+//			}
+//		});
+//		btnXoa.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+//		btnXoa.setBounds(848, 439, 114, 37);
+//		DangKi_Panel.add(btnXoa);
 		
 		DoiMatKhau_Panel = new JPanel();
 		TaiKhoan_Panel.addTab("Doi Mat Khau", null, DoiMatKhau_Panel, null);
 		DoiMatKhau_Panel.setLayout(null);
 		
-		JLabel lblDoiMatKhau = new JLabel("Doi Mat Khau");
-		lblDoiMatKhau.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDoiMatKhau.setForeground(Color.BLACK);
-		lblDoiMatKhau.setFont(new Font("Times New Roman", Font.PLAIN, 36));
-		lblDoiMatKhau.setBounds(516, 84, 229, 55);
-		DoiMatKhau_Panel.add(lblDoiMatKhau);
-		
 		JLabel lblTenDangNhap_1 = new JLabel("Ten dang nhap");
 		lblTenDangNhap_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTenDangNhap_1.setForeground(Color.BLACK);
-		lblTenDangNhap_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblTenDangNhap_1.setBounds(273, 195, 108, 24);
+		lblTenDangNhap_1.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblTenDangNhap_1.setBounds(311, 95, 300, 40);
 		DoiMatKhau_Panel.add(lblTenDangNhap_1);
 		
 		JLabel lblMatKhauCu = new JLabel("Mat khau cu");
 		lblMatKhauCu.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMatKhauCu.setForeground(Color.BLACK);
-		lblMatKhauCu.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblMatKhauCu.setBounds(662, 195, 108, 24);
+		lblMatKhauCu.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblMatKhauCu.setBounds(311, 199, 300, 40);
 		DoiMatKhau_Panel.add(lblMatKhauCu);
 		
 		TenDangNhap_DMK = new JTextField();
 		TenDangNhap_DMK.setHorizontalAlignment(SwingConstants.CENTER);
-		TenDangNhap_DMK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		TenDangNhap_DMK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		TenDangNhap_DMK.setColumns(10);
-		TenDangNhap_DMK.setBounds(391, 193, 192, 28);
+		TenDangNhap_DMK.setBounds(611, 95, 326, 40);
 		DoiMatKhau_Panel.add(TenDangNhap_DMK);
 		
 		JLabel lblMatKhauMi = new JLabel("Mat khau moi");
 		lblMatKhauMi.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMatKhauMi.setForeground(Color.BLACK);
-		lblMatKhauMi.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblMatKhauMi.setBounds(273, 288, 108, 24);
+		lblMatKhauMi.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblMatKhauMi.setBounds(311, 147, 300, 40);
 		DoiMatKhau_Panel.add(lblMatKhauMi);
 		
 		JLabel lblNhapLaiMat = new JLabel("Nhap lai mat khau moi");
 		lblNhapLaiMat.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNhapLaiMat.setForeground(Color.BLACK);
-		lblNhapLaiMat.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		lblNhapLaiMat.setBounds(623, 288, 176, 24);
+		lblNhapLaiMat.setFont(new Font("Avenir Next", Font.BOLD, 24));
+		lblNhapLaiMat.setBounds(311, 251, 300, 40);
 		DoiMatKhau_Panel.add(lblNhapLaiMat);
 		
 		MatKhauMoi_DMK = new JTextField();
 		MatKhauMoi_DMK.setHorizontalAlignment(SwingConstants.CENTER);
-		MatKhauMoi_DMK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		MatKhauMoi_DMK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		MatKhauMoi_DMK.setColumns(10);
-		MatKhauMoi_DMK.setBounds(391, 286, 192, 28);
+		MatKhauMoi_DMK.setBounds(611, 147, 326, 40);
 		DoiMatKhau_Panel.add(MatKhauMoi_DMK);
 		
 		MatKhauCu_DMK = new JTextField();
 		MatKhauCu_DMK.setHorizontalAlignment(SwingConstants.CENTER);
-		MatKhauCu_DMK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		MatKhauCu_DMK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		MatKhauCu_DMK.setColumns(10);
-		MatKhauCu_DMK.setBounds(800, 193, 192, 28);
+		MatKhauCu_DMK.setBounds(611, 199, 326, 40);
 		DoiMatKhau_Panel.add(MatKhauCu_DMK);
 		
 		NhapLaiMatKhauMoi_DMK = new JTextField();
 		NhapLaiMatKhauMoi_DMK.setHorizontalAlignment(SwingConstants.CENTER);
-		NhapLaiMatKhauMoi_DMK.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		NhapLaiMatKhauMoi_DMK.setFont(new Font("Avenir Next", Font.PLAIN, 24));
 		NhapLaiMatKhauMoi_DMK.setColumns(10);
-		NhapLaiMatKhauMoi_DMK.setBounds(809, 286, 192, 28);
+		NhapLaiMatKhauMoi_DMK.setBounds(611, 251, 326, 40);
 		DoiMatKhau_Panel.add(NhapLaiMatKhauMoi_DMK);
 		
-		JButton btnThayDoi = new JButton("Thay Doi");
+		JButton btnThayDoi = new JButton("DOI MAT KHAU", suaIcon);
+//		btnThayDoi.setText("<html><center>DOI<br/>MAT<br/>KHAU</center></html>");
 		btnThayDoi.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if(TenDangNhap_DMK.getText().equals("")||MatKhauCu_DMK.getText().equals("")||MatKhauMoi_DMK.getText().equals("")||NhapLaiMatKhauMoi_DMK.getText().equals("")) 
@@ -894,22 +876,22 @@ public class GiaoDienChinh {
 				}
 			}
 		});
-		btnThayDoi.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnThayDoi.setBounds(428, 376, 114, 37);
+		btnThayDoi.setFont(new Font("Avenir Next", Font.BOLD, 26));
+		btnThayDoi.setBounds(468, 371, 312, 80);
 		DoiMatKhau_Panel.add(btnThayDoi);
 		
-		JButton btnXoa_1 = new JButton("Xoa");
-		btnXoa_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				TenDangNhap_DMK.setText("");
-				MatKhauCu_DMK.setText("");
-				MatKhauMoi_DMK.setText("");
-				NhapLaiMatKhauMoi_DMK.setText("");
-			}
-		});
-		btnXoa_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnXoa_1.setBounds(854, 376, 114, 37);
-		DoiMatKhau_Panel.add(btnXoa_1);
+//		JButton btnXoa_1 = new JButton("Xoa");
+//		btnXoa_1.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent arg0) {
+//				TenDangNhap_DMK.setText("");
+//				MatKhauCu_DMK.setText("");
+//				MatKhauMoi_DMK.setText("");
+//				NhapLaiMatKhauMoi_DMK.setText("");
+//			}
+//		});
+//		btnXoa_1.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+//		btnXoa_1.setBounds(854, 376, 114, 37);
+//		DoiMatKhau_Panel.add(btnXoa_1);
 		
 		DangXuat_Panel = new JPanel();
 		TaiKhoan_Panel.addTab("Dang Xuat", null, DangXuat_Panel, null);
@@ -918,11 +900,11 @@ public class GiaoDienChinh {
 		JLabel lblTamBietVa = new JLabel("Tam biet va hen gap lai");
 		lblTamBietVa.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTamBietVa.setForeground(Color.BLACK);
-		lblTamBietVa.setFont(new Font("Times New Roman", Font.PLAIN, 36));
-		lblTamBietVa.setBounds(414, 161, 383, 55);
+		lblTamBietVa.setFont(new Font("Avenir Next", Font.BOLD, 40));
+		lblTamBietVa.setBounds(324, 132, 599, 55);
 		DangXuat_Panel.add(lblTamBietVa);
 		
-		JButton btnDangXuat = new JButton("Dang Xuat");
+		JButton btnDangXuat = new JButton("DANG XUAT", dangXuatIcon);
 		btnDangXuat.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DangNhap window = new DangNhap();
@@ -930,8 +912,8 @@ public class GiaoDienChinh {
 				frame.dispose();
 			}
 		});
-		btnDangXuat.setFont(new Font("Times New Roman", Font.PLAIN, 18));
-		btnDangXuat.setBounds(553, 276, 114, 37);
+		btnDangXuat.setFont(new Font("Avenir Next", Font.BOLD, 40));
+		btnDangXuat.setBounds(438, 279, 370, 80);
 		DangXuat_Panel.add(btnDangXuat);
 	}
 	

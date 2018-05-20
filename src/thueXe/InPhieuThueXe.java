@@ -35,6 +35,7 @@ import com.itextpdf.text.pdf.draw.VerticalPositionMark;
 import database.Database;
 import database.ThueXeDatabase;
 import giaoDienChinh.GiaoDienChinh;
+import thongBao.ThongBaoThanhCong;
 
 public class InPhieuThueXe {
 
@@ -49,6 +50,7 @@ public class InPhieuThueXe {
 	static String TongTienPhat;
 	static String TienNhanLai;
 	static String ThanhTien;
+	
 	
 	
 	/**
@@ -267,7 +269,7 @@ public static void NgayHenTra() {
 	}
 
 
-	public static void TongTienPhat() {
+public static void TongTienPhat() {
 	
 	String sqlCommand = "select TongTienPhat from thuexe where MaThueXe = " +"'"+MaThueXe+"'";
 	ResultSet rs = null;
@@ -295,8 +297,7 @@ public static void NgayHenTra() {
 	
 	}
 
-
-	public static void ThanhTien() {
+public static void ThanhTien() {
 	
 	String sqlCommand = "select ThanhTien from thuexe where MaThueXe = " +"'"+MaThueXe+"'";
 	ResultSet rs = null;
@@ -323,6 +324,10 @@ public static void NgayHenTra() {
 
 	
 	}
+
+
+
+
 
 
 
@@ -413,7 +418,7 @@ public static void NgayHenTra() {
 		//font
 		com.itextpdf.text.Font f = null;
 		try {
-			f = new com.itextpdf.text.Font(BaseFont.createFont("font/vuArial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED));
+			f = new com.itextpdf.text.Font(BaseFont.createFont("font\\vuArial.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED));
 		} catch (DocumentException e2) {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
@@ -426,7 +431,7 @@ public static void NgayHenTra() {
 		
 		com.itextpdf.text.Font f_B = null;
 		try {
-			f_B = new com.itextpdf.text.Font(BaseFont.createFont("font/vuArialBold.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED));
+			f_B = new com.itextpdf.text.Font(BaseFont.createFont("font\\vuArialBold.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED));
 		} catch (DocumentException e2) {
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
@@ -441,7 +446,7 @@ public static void NgayHenTra() {
 
 		 Image image1 = null;
 		 try {
-			  image1 = Image.getInstance("iconImages/hust.png");
+			  image1 = Image.getInstance("iconImages\\hust.png");
 		} catch (BadElementException | IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
